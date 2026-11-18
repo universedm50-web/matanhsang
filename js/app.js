@@ -500,9 +500,9 @@ function renderHomeDoctors() {
   const loopList = [...base, ...base];
 
   slider.innerHTML = `<div class="doctors-marquee-track">` + loopList.map((d) => `
-    <div class="home-doc-card doctor-card-fx card-gold-accent group shrink-0 w-72 sm:w-80 bg-white/5 border border-white/10 rounded-3xl overflow-hidden flex flex-col justify-between shadow-xl">
+    <div class="home-doc-card doctor-card-fx card-gold-accent group shrink-0 w-64 sm:w-80 bg-white/5 border border-white/10 rounded-3xl overflow-hidden flex flex-col justify-between shadow-xl">
       <div>
-        <div class="doctor-portrait-wrap h-72 relative">
+        <div class="doctor-portrait-wrap h-60 sm:h-72 relative">
           <img src="${d.image}" alt="${d.name}" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-700" />
           <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-transparent to-transparent"></div>
           <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-navy-950/75 backdrop-blur-md border border-gold-400/40 text-[10px] font-bold text-gold-400">${d.specialty}</span>
